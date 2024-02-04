@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Nanum+Myeongjo:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+*{
+
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+
+    
+}
+
+ header{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+
+.head{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+ .logo img{
+    width: 8vw;
+    height: 4vh;
+
+ }
+
+#navigations{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    margin-left: 2rem;
+
+ }
+
+ 
+ li{
+    list-style-type: none;
+ }
+
+ li a{
+    text-decoration: none;
+    color: white;
+    font-family: salsa;
+    font-weight: light;
+    font-size: 1.2rem; 
+ }
+
+ li a:hover{
+    color: rgb(165, 97, 42);
+
+ }
+
+
+.Login{
+    margin-right: 0.5rem;
+    width: 8vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: transparent;
+    border:3px solid white;
+    color:white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: salsa;
+ } 
+.Login:hover{
+    background-color: white;
+    color: #000;
+    font-family: salsa;
+ } 
+
+
+main{
+    height:100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+#male, #female{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#male{
+    background-image: url("../images/New-Main-Page-Men-scaled_ccexpress.jpeg.webp");
+
+}
+
+#female{
+    background-image: url("../images/Main-Page-Women-scaled.jpg.webp");
+
+}
+
+:where(#male, #female) :is(h1){
+    color: white;
+    font-size: 3rem;
+    font-family: salsa;
+    position: absolute;
+    bottom: 10vh;
+
+}
+
+#male h1{
+    left: 5rem;
+}
+
+#female h1{
+    right: 30vw;
+}
