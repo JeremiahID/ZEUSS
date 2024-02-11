@@ -137,12 +137,15 @@ main{
     left: 5rem;
 }
 
-#Male_layer{
+
+#Male_layer, #Female_layer{
     background-color: rgba(0, 0, 0, 0.623);
-    
+    backdrop-filter: blur(2px);
+    transition: all 1s ease-in-out;
     display: none;
 
 }
+
 
 #female h1{
     right: 30vw;
