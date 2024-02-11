@@ -113,6 +113,9 @@ main{
 
 #male{
     background-image: url("../images/New-Main-Page-Men-scaled_ccexpress.jpeg.webp");
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
 }
 
@@ -132,6 +135,12 @@ main{
 
 #male h1{
     left: 5rem;
+}
+
+#Male_layer{
+    background-color: rgba(0, 0, 0, 0.623);
+    display: none;
+
 }
 
 #female h1{
