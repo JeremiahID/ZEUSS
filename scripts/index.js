@@ -3,7 +3,7 @@
 const Male = document.querySelector('#male');
 const Female = document.querySelector('#female');
 const Main = document.querySelector('main');
-const Male_layer = document.querySelector('#Male_layer');
+const Male_layer = document.querySelector('#male_wrapper');
 const Female_layer = document.querySelector('#female_wrapper');
 const HeaderMale = document.querySelector('#male h1');
 const HeaderFemale = document.querySelector('#female h1');
