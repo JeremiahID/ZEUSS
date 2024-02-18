@@ -32,7 +32,7 @@ Male.addEventListener('mouseover', () =>{
 
 Female.addEventListener('mouseover', () =>{
     if( Female_layer.style.display === "none" || Male_layer.style.display === "block" ){
-        Female_layer.style.display = "block"
+        Female_layer.style.display = "flex"
         Male_layer.style.display = "none";
         Main.style.gridTemplateColumns = '35% 65%';
         HeaderMale.style.display = "none";
@@ -47,14 +47,14 @@ Female.addEventListener('mouseover', () =>{
 
 })
 
-Body.addEventListener('mouseover', () =>{
-    if(BodyImage.style.display === "none"){
-        BodyImage.style.display = "block"
-    } else {
-        BodyImage.style.display = "none"
-    }
+// Body.addEventListener('mouseover', () =>{
+//     if(BodyImage.style.display === "none"){
+//         BodyImage.style.display = "block"
+//     } else {
+//         BodyImage.style.display = "none"
+//     }
 
-})
+// })
 
 
 //Male_layer.style.display === "block"  Male_layer.style.display = "none";

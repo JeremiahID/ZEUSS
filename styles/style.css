@@ -144,7 +144,7 @@ main{
 
 #male_wrapper {
     transition: all 1s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.685);
     backdrop-filter: blur(1px);
     display: none;
     justify-content: center;
@@ -156,10 +156,12 @@ main{
 
 
 #female_wrapper {
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.685);
     backdrop-filter: blur(1px);
     transition: all 1s ease-in-out;
     display: none;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -169,22 +171,6 @@ main{
 
 .mobile{
     display: none;
-}
-
-
-@media screen and (max-width :770px) {
-    header{
-        display: none;
-    }
-
-    main{
-        display: none;
-    }
-
-    .mobile{
-        display:block;
-
-    }
 }
 
 .content_wrapper{
@@ -206,9 +192,8 @@ main{
 }
 
 :where(.body, .skin, .hair) :is( img){
-    width: 15vw;
+    width: 12vw;
     height: 25vh;
-    display: none;
 }
 
 :where(.body, .skin, .hair) :is( a){
@@ -221,8 +206,46 @@ main{
     border-radius: 50px;
     border: 2px solid white;
 }
+/* this is the styling for the female mouse over section */
+
+.body_female,.skin_female{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+}
+
+:where(.body_female,.skin_female) :is( img){
+    width: 15vw;
+    height: 38vh;
+}
+
+:where(.body_female,.skin_female) :is( a){
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid white;
+}
 
 
 
+@media screen and (max-width :770px) {
+    header{
+        display: none;
+    }
 
+    main{
+        display: none;
+    }
+
+    .mobile{
+        display:block;
+
+    }
+}
 
