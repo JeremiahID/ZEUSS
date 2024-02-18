@@ -185,9 +185,9 @@ main{
 
 .body,.skin, .hair{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: inherit;
 }
 
@@ -210,15 +210,15 @@ main{
 
 .body_female,.skin_female{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 100%;
     height: inherit;
 }
 
 :where(.body_female,.skin_female) :is( img){
-    width: 15vw;
-    height: 38vh;
+    width: 18vw;
+    height: 45vh;
 }
 
 :where(.body_female,.skin_female) :is( a){
