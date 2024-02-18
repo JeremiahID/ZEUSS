@@ -8,6 +8,7 @@ const Female_layer = document.querySelector('#female_wrapper');
 const HeaderMale = document.querySelector('#male h1');
 const HeaderFemale = document.querySelector('#female h1');
 const Body = document.querySelector('.body');
+const BodyImage = document.querySelector('.body img');
 const Skin = document.querySelector('.skin');
 const Hair = document.querySelector('.hair');
 
@@ -42,6 +43,15 @@ Female.addEventListener('mouseover', () =>{
         Main.style.gridTemplateColumns = '50% 50%';
         HeaderMale.style.display = "block";
         HeaderFemale.style.display = "block";
+    }
+
+})
+
+Body.addEventListener('mouseover', () =>{
+    if(BodyImage.style.display === "none"){
+        BodyImage.style.display = "block"
+    } else {
+        BodyImage.style.display = "none"
     }
 
 })
