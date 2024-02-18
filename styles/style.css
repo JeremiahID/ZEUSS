@@ -192,16 +192,39 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    height: 80vh;
+    width: 100%;
 }
 
 
 .body,.skin, .hair{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 50%;
+    height: inherit;
 }
 
 :where(.body, .skin, .hair) :is( img){
-    width: 5vw;
-    height: 5vh;
+    width: 15vw;
+    height: 25vh;
+    display: none;
 }
+
+:where(.body, .skin, .hair) :is( a){
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.body a:hover{
+    color: red;
+}
+
+
+

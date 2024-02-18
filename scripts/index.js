@@ -11,7 +11,7 @@ const HeaderFemale = document.querySelector('#female h1');
 
 Male.addEventListener('mouseover', () =>{
     if(Male_layer.style.display === "none" || Female_layer.style.display === "block" ){
-        Male_layer.style.display = "block";
+        Male_layer.style.display = "flex";
         Female_layer.style.display = "none"
         Main.style.gridTemplateColumns = '65% 35%';
         HeaderMale.style.display = "none";
