@@ -121,6 +121,9 @@ main{
 
 #female{
     background-image: url("../images/Main-Page-Women-scaled.jpg.webp");
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 
 }
 
@@ -138,9 +141,18 @@ main{
 }
 
 
-#Male_layer, #Female_layer{
-    background-color: rgba(0, 0, 0, 0.623);
-    backdrop-filter: blur(2px);
+#Male_layer {
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(1px);
+    transition: all 1s ease-in-out;
+    display: none;
+
+}
+
+
+#female_wrapper {
+    background-color: rgba(0, 0, 0, 0.432);
+    backdrop-filter: blur(1px);
     transition: all 1s ease-in-out;
     display: none;
 
