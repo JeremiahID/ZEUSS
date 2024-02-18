@@ -60,9 +60,9 @@ body{
  li a{
     text-decoration: none;
     color: white;
-    font-family: salsa;
-    font-weight: light;
-    font-size: 1.2rem; 
+    font-family: monospace;
+    font-weight:bolder;
+    font-size: 1.3rem; 
  }
 
  li a:hover{
@@ -160,4 +160,23 @@ main{
 
 #female h1{
     right: 30vw;
+}
+
+.mobile{
+    display: none;
+}
+
+
+@media screen and (max-width :770px) {
+    header{
+        display: none;
+    }
+
+    main{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
 }
