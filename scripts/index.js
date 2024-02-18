@@ -7,6 +7,9 @@ const Male_layer = document.querySelector('#male_wrapper');
 const Female_layer = document.querySelector('#female_wrapper');
 const HeaderMale = document.querySelector('#male h1');
 const HeaderFemale = document.querySelector('#female h1');
+const Body = document.querySelector('.body');
+const Skin = document.querySelector('.skin');
+const Hair = document.querySelector('.hair');
 
 
 Male.addEventListener('mouseover', () =>{
